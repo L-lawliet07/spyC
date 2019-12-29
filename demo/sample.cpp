@@ -17,8 +17,9 @@ main () {
 		std::cin >> arr[i];
 	}
 	std::sort(arr, arr + size);
-
+    //fail();
     for ( int i = 0; i < size; ++i ) {
+		//int sum = 0;
 		std::cout << arr[i] << " ";
 	}
 	std::cout << std::endl;
