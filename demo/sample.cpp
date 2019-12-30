@@ -23,5 +23,5 @@ main () {
 		std::cout << arr[i] << " ";
 	}
 	std::cout << std::endl;
-    return 0;
+   return 0;
 }

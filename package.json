@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./bin/run.js",
   "scripts": {
     "test": "node index.js ./demo/sample.cpp"
   },

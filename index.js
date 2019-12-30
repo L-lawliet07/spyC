@@ -1,7 +1,8 @@
 ////////////////////////////////////////////////////////////
 // @AUTHOR: Mandeep Bisht
 ////////////////////////////////////////////////////////////
-    
+
+
 'use strict'
 
 const figlet = require('figlet');
@@ -11,19 +12,28 @@ const {watch} = require('./lib/watch');
 const {heading, clear} = require('./util/view');
 const {execute} = require('./lib/execute');
 //Starting eagle
-clear();
-heading( '[eYe]', { verticalLayout: 'default', horizontalLayout: 'fitted' } );
 
-const parse_result = parser.parser( process.argv.slice(2) );
+module.exports = {
 
-execute(
-    parse_result.compile_command,
-    parse_result.exec_command,
-    parse_result.file 
-)
+    start: (args) => {
+        clear();
+        heading( 'eagle', {font : 'Cosmike', verticalLayout: 'default', horizontalLayout: 'fitted' } );
 
-watch( 
-    parse_result.compile_command,
-    parse_result.exec_command,
-    parse_result.file
-);
+        const parse_result = parser.parser( args );
+
+        execute(
+            parse_result.compile_command,
+            parse_result.exec_command,
+            parse_result.file 
+        )
+
+        watch( 
+            parse_result.compile_command,
+            parse_result.exec_command,
+            parse_result.file
+        );    
+
+    }
+}
+
+
