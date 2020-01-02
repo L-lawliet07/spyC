@@ -1,7 +1,7 @@
 {
-  "name": "cli-tool",
+  "name": "spyc",
   "version": "1.0.0",
-  "description": "",
+  "description": "monitoring tool for c++ ",
   "main": "index.js",
   "preferGlobal": true,
   "bin": "./bin/run.js",

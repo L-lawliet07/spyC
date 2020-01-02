@@ -7,8 +7,8 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 const {spawn} = require('child_process');
 
-
 function indent_util( content ) {
+
     const max_width = 12;
     let space = '';
     for ( let i = 0; i < max_width - content.length; ++i ) {
