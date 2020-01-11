@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('./../index.js').start(process.argv.slice(2));
+require("./../index.js").start(process.argv.slice(2));
