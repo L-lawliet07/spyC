@@ -5,15 +5,23 @@
 
 'use strict'
 
+/*
+ * require statement
+ */
+
 const figlet = require('figlet');
 
 const parser = require('./lib/parser');
+
 const {watch, unwatch} = require('./lib/watch');
+
 const {heading, clear} = require('./util/view');
+
 const {execute} = require('./lib/execute');
+
 const {exec} = require('child_process');
+
 const path = require('path');
-//Starting spyc
 
 // test
 const readLine = require('readline');
@@ -23,7 +31,7 @@ module.exports = {
 
     start: (args) => {
         clear();
-        heading( '<spyc/>', {font : 'Star Wars', verticalLayout: 'default', horizontalLayout: 'fitted' } );
+        heading( 'O.O', {font : 'Bloody', verticalLayout: 'default', horizontalLayout: 'fitted' } );
 
         const parse_result = parser.parser( args );
 
@@ -57,5 +65,3 @@ module.exports = {
 
     }
 }
-
-
