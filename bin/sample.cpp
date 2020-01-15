@@ -1,7 +1,10 @@
-#include<iostream>
-int main () {
-	int x;
-	std::cin >> x; 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x;
+    std::cin >> x;
     std::cout << "Hello World : " << x << std::endl;
     return 0;
 }

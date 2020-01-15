@@ -17,7 +17,7 @@ const figlet = require("figlet");
  */
 
 function indent_util(content) {
-  const max_width = 12;
+  const max_width = Math.max(13, content.length);
   let space = "";
   for (let i = 0; i < max_width - content.length; ++i) {
     space += " ";
@@ -30,9 +30,9 @@ function indent_util(content) {
  */
 
 function heading(msg, options = undefined) {
-  //console.log( chalk.bold.white('-----------------------------------------------') );
-  console.log(chalk.bold.blue(figlet.textSync(msg, options)));
-  //console.log( chalk.bold.white('-----------------------------------------------') );
+  console.log(chalk.bold.white(" ^   ^    ______________"));
+  console.log(chalk.bold.white(figlet.textSync(msg, options)));
+  // console.log(chalk.bold.green("_______________________"));
 }
 
 /*
