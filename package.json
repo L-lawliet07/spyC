@@ -1,13 +1,10 @@
 {
   "name": "spyc",
   "version": "1.0.0",
-  "description": "monitoring tool for c++ ",
+  "description": "monitoring tool for c++",
   "main": "index.js",
   "preferGlobal": true,
   "bin": "./bin/run.js",
-  "scripts": {
-    "test": "node index.js ./demo/sample.cpp"
-  },
   "author": "L-lawliet07",
   "license": "ISC",
   "dependencies": {
