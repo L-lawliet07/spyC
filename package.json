@@ -5,6 +5,13 @@
   "main": "index.js",
   "preferGlobal": true,
   "bin": "./bin/run.js",
+  "keywords": {
+      "CLI",
+      "tool",
+      "Monitor",
+      "Testing",
+      "cpp"
+  },
   "author": "L-lawliet07",
   "license": "ISC",
   "dependencies": {

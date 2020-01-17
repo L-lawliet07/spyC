@@ -1,32 +1,49 @@
-<h1 style="color:rgb(3, 102, 214);">spyc</h1>
+# So what is spyc ? 
 
-<strong style="color:red"><em>spyc</em></strong> is a CLI tool which monitors your c++ code for changes 
+<strong style="color:red"><em>`spyc`</em></strong>  is a `cli` tool used to monitor `cpp` code for changes. It automatically compiles and executes your code whenever there is a change in the file.
+
+<strong style="color:red"><em>`spyc`</em></strong> is designed mainly for competitive programmers so that they can efficiently debug and execute their code for a particular test case without compiling again and again.
+
+<strong style="color:red"><em>`spyc`</em></strong> also supports some of the common GCC flags used in competitive programming.
+
+# Installation
+
+- ### Using [npm](http://npmjs.org) 
+
+##### `install` globally 
+
+```bash
+npm install -g spyc
+```
 
 
 
-<h1 style="color:rgb(3, 102, 214);">Installation</h1>
+##### `install` as a dev dependency
 
-- ###  Using npm
-
-
-> ***npm*** i -g ***spyc***
-
+```bash
+npm install --save-dev spyc
+```
 
 
-<h1 style="color:rgb(3, 102, 214);">Usage</h1>
 
-To run <strong style="color:red"><em>spyc</em></strong> write.
+# Usage
 
->  ***spyc*** \<yourfile.cpp> [,options]
+To run <strong style="color:red"><em>`spyc`</em></strong> write.
+
+```bash
+spyc <yourfile.cpp> [,options]
+```
 
 
 
 - ### Help
 
 
-For CLI options,  use -h or --help.
+For CLI options,  use `-h` or `--help`.
 
-> ***spyc*** -h
+```bash
+spyc -h
+```
 
 
 
@@ -34,16 +51,17 @@ For CLI options,  use -h or --help.
 
 
 
-
-<h1 style="color:rgb(3, 102, 214);">Examples</h1>
+## Examples
 
 - #### Demo to run simple cpp file.
 
-​	Example <strong style="color:red"><em>spyc</em></strong> tool for monitoring sample.cpp file.
+​	Example <strong style="color:red"><em>`spyc`</em></strong> tool for monitoring sample.cpp file.
 
 Run command.
 
-> ***spyc*** ./sample.cpp
+```bash
+spyc ./sample.cpp
+```
 
 
 
@@ -53,12 +71,14 @@ Run command.
 
 - #### Demo to run cpp file with input.
 
-​	Example of  <strong style="color:red"><em>spyc</em></strong> tool monitoring sample.cpp file with input.
+​	Example of  <strong style="color:red"><em>`spyc`</em></strong> tool monitoring sample.cpp file with input.
 
 Run command.
 
-> ***spyc*** ./sample.cpp --input=./in
+```bash
+spyc ./sample.cpp --input=./in
+```
 
 
 
-![](/home/lawliet/Desktop/spyc/assets/example-input.gif)
+![](./assets/example-input.gif)
