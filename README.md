@@ -1,6 +1,6 @@
 # So what is spyc ? 
 
-<strong style="color:red"><em>`spyc`</em></strong>  is a `cli` tool used to monitor `cpp` code for changes. It automatically compiles and executes your code whenever there is a change in the file.
+<strong style="color:red"><em>`spyc`</em></strong>   is a `CLI` tool that monitors your `CPP` code and automatically compiles and executes your code whenever there is a change in the file.
 
 <strong style="color:red"><em>`spyc`</em></strong> is designed mainly for competitive programmers so that they can efficiently debug and execute their code for a particular test case without compiling again and again.
 
@@ -8,9 +8,11 @@
 
 # Installation
 
-- ### Using [npm](http://npmjs.org) 
 
-##### `install` globally 
+
+- ### Using [npm](https://www.npmjs.com/~lawliet07) 
+
+##### `Install` globally 
 
 ```bash
 npm install -g spyc
@@ -18,7 +20,7 @@ npm install -g spyc
 
 
 
-##### `install` as a dev dependency
+##### `Install` as a dev dependency
 
 ```bash
 npm install --save-dev spyc
@@ -51,13 +53,35 @@ spyc -h
 
 
 
+
+
+## Runtime input
+
+
+
+
+
+## Cat file
+
+
+
+## Check Stats
+
+
+
+## Supports some common gcc flags
+
+
+
+## My personal flag options
+
+
+
 ## Examples
 
 - #### Demo to run simple cpp file.
 
-​	Example <strong style="color:red"><em>`spyc`</em></strong> tool for monitoring sample.cpp file.
-
-Run command.
+**Run command.**
 
 ```bash
 spyc ./sample.cpp
@@ -65,20 +89,74 @@ spyc ./sample.cpp
 
 
 
-<img src="./assets/example.gif" style="zoom:155%;" />
+<img src="./assets/example.gif" />
 
 ​		
 
 - #### Demo to run cpp file with input.
 
-​	Example of  <strong style="color:red"><em>`spyc`</em></strong> tool monitoring sample.cpp file with input.
-
-Run command.
+**Run command.**
 
 ```bash
-spyc ./sample.cpp --input=./in
+spyc ./sample.cpp --input=<inputfile>
+```
+
+or
+
+``` bash
+spyc ./sample.cpp -i=<inputfile>
 ```
 
 
 
-![](./assets/example-input.gif)
+<img src="./assets/example-input.gif" />
+
+
+
+- #### Demo to change the input file without restarting the app. 
+
+In <strong style="color:red"><em>`spyc`</em></strong>, we can also change or provide input at runtime without restarting the tool. 
+
+This will help competitive programmers to check their code on different test cases without wasting time on compiling and executing the code manually.
+
+**Run command.**
+
+```  bash
+--input=./in
+```
+
+or
+
+```bash
+-i=./in
+```
+
+
+
+<img src="./assets/runtime-input.gif" />
+
+
+
+* #### Demo to `cat` input or code at runtime.
+
+<strong style="color:red"><em>`spyc`</em></strong> can also display input file or cpp code at runtime without pausing or stopping the tool.
+
+This helps competitive programmers to see and debug their code or check the input file within the <strong style="color:red"><em>`spyc`</em></strong> tool.
+
+``` bash
+--cat=<filename>
+```
+
+<img src="./assets/cat.gif" />
+
+
+
+* #### Demo to check the stats.
+
+In <strong style="color:red"><em>`spyc`</em></strong>, we can also see stats from past executions. This will help competitive programmers to optimize their code by comparing the execution time of their code.
+
+```bash
+stats
+```
+
+<img src="./assets/stats.gif" />

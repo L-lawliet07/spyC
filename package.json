@@ -1,17 +1,19 @@
 {
   "name": "spyc",
   "version": "1.0.0",
-  "description": "monitoring tool for c++",
+  "description": "`CLI` tool that monitors your CPP code and automatically compiles and executes your code whenever there is a change in the file",
   "main": "index.js",
   "preferGlobal": true,
   "bin": "./bin/run.js",
-  "keywords": {
-      "CLI",
+  "keywords": [
+      "CLI", 
       "tool",
       "Monitor",
       "Testing",
-      "cpp"
-  },
+      "cpp",
+      "Competitive-programming",
+      "auto reload"
+  ],
   "author": "L-lawliet07",
   "license": "ISC",
   "dependencies": {
