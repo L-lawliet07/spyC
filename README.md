@@ -6,6 +6,8 @@
 
 <strong style="color:red"><em>`spyc`</em></strong> also supports some of the common GCC flags used in competitive programming.
 
+
+
 # Installation
 
 
@@ -59,7 +61,9 @@ spyc -h
 
 <strong style="color:red"><em>`spyc`</em></strong> allows user to provide or change the input file at runtime without stopping the currently running <strong style="color:red"><em>`spyc`</em></strong> program, this help programmers to check their code on multiple test cases without much effort.
 
-For example click <a href='#runtime-input'>here</a>.
+For example click <a href='#r-input'>here</a>.
+
+
 
 ## Cat file
 
@@ -67,15 +71,21 @@ For example click <a href='#runtime-input'>here</a>.
 
 For example click <a href='#cat'>here</a>.
 
+
+
 ## Check Stats
 
 In <strong style="color:red"><em>`spyc`</em></strong> user can also see the past stats using `stats` options for performance comparison. This helps the user to check and compare the efficiency of their code on different test cases.
 
 For example click <a href='#stats'>here</a>.
 
+
+
 ## Supports some common gcc flags
 
 <strong style="color:red"><em>`spyc`</em></strong> also support some of the common gcc flags like,
+
+
 
 | Flags     |                                                         |
 | --------- | ------------------------------------------------------- |
@@ -88,15 +98,30 @@ For example click <a href='#stats'>here</a>.
 | O3        | Higher level of optmization.                            |
 | fsanitize | Sanitizer for runtime checks. (eg. --fsanitize=address) |
 
+
+
 ## My personal flag options
 
-you 
+You guys can also use my preferred GCC flag options for compiling the code using `quick`  flag.
+
+```bash
+spyc ./sample.cpp --quick
+```
+
+`quick` option will enable the following gcc flag combination.
+
+``` bash
+g++ -DLOCAL -std=c++17 -Wshadow -Wall -o \<output> <yourfile.cpp> -fsanitize=address 
+-fsanitize=undefined -D_GLIBCXX_DEBUG -g
+```
+
+
 
 ## Examples
 
 - #### Demo to run simple cpp file.
 
-  **Run command.**
+**Run command.**
 
 ```bash
 spyc ./sample.cpp
@@ -128,7 +153,7 @@ spyc ./sample.cpp -i=<inputfile>
 
 
 
-- #### <span id='runtime-input'>Demo to change the input file without restarting the app. </span>
+- #### <span id='r-input'>Demo to change the input file without restarting the app. </span>
 
 In <strong style="color:red"><em>`spyc`</em></strong>, we can also change or provide input at runtime without restarting the tool. 
 This will help users to check their code on different test cases without wasting time on compiling and executing the code manually.
@@ -151,7 +176,7 @@ or
 
 
 
-* #### <span id='runtime-input'>Demo to `cat` input or code at runtime.</span>
+* #### <span id='cat'>Demo to `cat` input or code at runtime.</span>
 
 <strong style="color:red"><em>`spyc`</em></strong> can also display input file or cpp code at runtime without pausing or stopping the tool.
 
@@ -175,3 +200,6 @@ stats
 
 <img src="./assets/stats.gif" />
 
+---
+
+---
