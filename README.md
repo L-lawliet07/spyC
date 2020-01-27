@@ -1,8 +1,8 @@
 # So what is spyc ? 
 
-<strong style="color:red"><em>`spyc`</em></strong>   is a `CLI` tool that monitors your `CPP` code and automatically compiles and executes your code whenever there is a change in the file.
+<strong style="color:red"><em>`spyc`</em></strong>   is a `CLI` tool that monitors your `CPP` code and automatically compiles and executes the code whenever there is a change in the file.
 
-<strong style="color:red"><em>`spyc`</em></strong> is designed mainly for competitive programmers so that they can efficiently debug and execute their code for a particular test case without compiling again and again.
+<strong style="color:red"><em>`spyc`</em></strong> is designed mainly for competitive programmers so that they can efficiently debug and execute their code for multiple test cases without compiling again and again.
 
 <strong style="color:red"><em>`spyc`</em></strong> also supports some of the common GCC flags used in competitive programming.
 
@@ -92,8 +92,8 @@ For example click <a href='#stats'>here</a>.
 | std       | std - Specify the C++ version or ISO standard version.  |
 | Wall      | Turns on lots of compiler warning flags.                |
 | Werror    | Turn any warning into a compilation error.              |
-| Wextra    | Enables extra flags not enabled by -Wall                |
-| Wshadow   | Enable warning for Variable Shadowing                   |
+| Wextra    | Enables extra flags not enabled by -Wall.               |
+| Wshadow   | Enable warning for Variable Shadowing.                  |
 | O0        | No optmization.                                         |
 | O3        | Higher level of optmization.                            |
 | fsanitize | Sanitizer for runtime checks. (eg. --fsanitize=address) |
@@ -111,7 +111,7 @@ spyc ./sample.cpp --quick
 `quick` option will enable the following gcc flag combination.
 
 ``` bash
-g++ -DLOCAL -std=c++17 -Wshadow -Wall -o \<output> <yourfile.cpp> -fsanitize=address 
+g++ -DLOCAL -std=c++17 -Wshadow -Wall -o <output> <yourfile.cpp> -fsanitize=address 
 -fsanitize=undefined -D_GLIBCXX_DEBUG -g
 ```
 
