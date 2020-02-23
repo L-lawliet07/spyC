@@ -1,3 +1,9 @@
+
+
+<img src="./assets/spyc.jpg" />
+
+
+
 # So what is spyc ? 
 
 <strong style="color:red"><em>`spyc`</em></strong>   is a `CLI` tool that monitors your `CPP` code and automatically compiles and executes the code whenever there is a change in the file.
@@ -12,7 +18,7 @@
 
 
 
-- ### Using [npm](https://www.npmjs.com/~lawliet07) 
+### Using [npm](https://www.npmjs.com/~lawliet07) 
 
 ##### `Install` globally 
 
@@ -40,7 +46,7 @@ spyc <yourfile.cpp> [,options]
 
 
 
-- ### Help
+### Help
 
 
 For CLI options,  use `-h` or `--help`.
@@ -119,7 +125,7 @@ g++ -DLOCAL -std=c++17 -Wshadow -Wall -o <output> <yourfile.cpp> -fsanitize=addr
 
 ## Examples
 
-- #### Demo to run simple cpp file.
+#### Demo to run simple cpp file.
 
 **Run command.**
 
@@ -133,7 +139,7 @@ spyc ./sample.cpp
 
 ​		
 
-- #### Demo to run cpp file with input.
+#### Demo to run cpp file with input.
 
 **Run command.**
 
@@ -153,7 +159,7 @@ spyc ./sample.cpp -i=<inputfile>
 
 
 
-- #### <span id='r-input'>Demo to change the input file without restarting the app. </span>
+#### <span id='r-input'>Demo to change the input file without restarting the app. </span>
 
 In <strong style="color:red"><em>`spyc`</em></strong>, we can also change or provide input at runtime without restarting the tool. 
 This will help users to check their code on different test cases without wasting time on compiling and executing the code manually.
@@ -176,7 +182,7 @@ or
 
 
 
-* #### <span id='cat'>Demo to `cat` input or code at runtime.</span>
+#### <span id='cat'>Demo to `cat` input or code at runtime.</span>
 
 <strong style="color:red"><em>`spyc`</em></strong> can also display input file or cpp code at runtime without pausing or stopping the tool.
 
@@ -190,7 +196,7 @@ This helps competitive programmers to see and debug their code or check the inpu
 
 
 
-* #### <span id='stats'>Demo to check the stats.</span>
+#### <span id='stats'>Demo to check the stats.</span>
 
 In <strong style="color:red"><em>`spyc`</em></strong>, users can also see stats from past executions. This will help the user to optimize their code by comparing the execution time of their code.
 

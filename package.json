@@ -1,6 +1,6 @@
 {
   "name": "spyc",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "CLI tool for competitive programmers that will monitor for changes in the code and automatically compiles the code.",
   "main": "index.js",
   "preferGlobal": true,
